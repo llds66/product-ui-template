@@ -1,0 +1,24 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+     /* 别名配置 */
+     "baseUrl": "./",
+     "paths": {
+       "@/*": ["src/*"],
+       "@components/*": ["src/common/components/*"],
+       "@assets/*": ["src/common/assets/*"],
+       "@apis/*": ["src/common/apis/*"],
+       "@http/*": ["src/common/http/*"],
+       "@utils/*": ["src/common/utils/*"]
+     },
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
+}
