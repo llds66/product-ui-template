@@ -23,7 +23,7 @@ export default defineConfig({
     analyzer({
       analyzerMode: "static",
       fileName: "analyzer",
-      openAnalyzer: true,
+      openAnalyzer: process.env.ANALYZE === 'true',
     }),
   ],
   resolve: {
