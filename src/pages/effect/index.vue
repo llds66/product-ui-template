@@ -38,7 +38,7 @@ const animations = [
 <template>
   <div class="flex flex-col items-center">
     <div v-for="(a, index) in animations" :key="index"
-      class="h-100 w-full border-2 rounded-lg border-dashed border-stone-500 dark:border-stone-200 mt-5 flex flex-col items-center justify-center gap-y-2">
+      class="h-88vh w-full border-2 rounded-lg border-dashed border-stone-500 dark:border-stone-200 mt-5 flex flex-col items-center justify-center gap-y-2">
       <motion.div
         :initial="a.initial"
         :while-in-view="a.whileInView"
