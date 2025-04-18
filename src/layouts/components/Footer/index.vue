@@ -19,7 +19,7 @@ const footerList = ref([
     {
         name: 'Github',
         icon: 'i-mingcute-github-line',
-        link: 'https://example3.com'
+        link: 'https://github.com/llds66/product-ui-template'
     }
 ])
 </script>
@@ -30,7 +30,7 @@ const footerList = ref([
             <span class="text-sm text-stone-600 dark:text-stone-400 order-last md:order-first md:mt-0 mt-4">©
                 Author</span>
             <div class="flex-1"></div>
-            <a v-for="item in footerList" :key="item.name" :href="item.link"
+            <a v-for="item in footerList" target="_blank" :key="item.name" :href="item.link"
                 class=" text-stone-600 dark:text-stone-400 dark:hover:bg-#27272a flex items-center justify-center gap-x-1 p-2 rounded-md hover:bg-#f3f4f7 transition-colors duration-200">
                 <span class="text-sm">{{ item.name }}</span>
                 <div :class="item.icon + ' text-xl'"></div>

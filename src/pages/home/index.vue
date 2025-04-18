@@ -33,7 +33,7 @@ const router = useRouter()
             </motion.button>
         </div>
         <div class="rounded-lg shadow-md mt-5 overflow-hidden">
-            <iframe src="https://motion.dev" frameborder="0" height="600" width="100%" scrolling="no"></iframe>
+            <iframe src="https://vite.dev/" frameborder="0" height="600" width="100%" scrolling="no"></iframe>
         </div>
     </div>
 </template>
