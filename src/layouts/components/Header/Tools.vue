@@ -1,6 +1,6 @@
 <script setup lang='ts'>
 import { ref } from 'vue'
-import { useTheme } from '@/composables/useTheme'
+import { useTheme } from '@composables/useTheme'
 const toolList = ref([
     { url: '/', icon: 'i-mingcute-notification-line' },
     { url: 'https://tiktok.com', icon: 'i-mingcute-tiktok-line' },

@@ -7,6 +7,7 @@
      "paths": {
        "@/*": ["src/*"],
        "@components/*": ["src/common/components/*"],
+       "@composables/*": ["src/common/composables/*"],
        "@assets/*": ["src/common/assets/*"],
        "@apis/*": ["src/common/apis/*"],
        "@http/*": ["src/common/http/*"],

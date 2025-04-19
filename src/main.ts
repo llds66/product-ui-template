@@ -6,6 +6,8 @@ import router from "./router";
 import pinia from "./pinia";
 import PrimeVue from "primevue/config";
 import Aura from "@primeuix/themes/aura";
+import 'lenis/dist/lenis.css';
+import '@utils/applyDamping'
 
 const app = createApp(App);
 app

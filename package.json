@@ -15,6 +15,7 @@
   "dependencies": {
     "@primeuix/themes": "^1.0.3",
     "@types/node": "^22.13.14",
+    "lenis": "^1.2.3",
     "motion-v": "1.0.0-beta.2",
     "pinia": "^3.0.1",
     "primevue": "^4.3.3",
