@@ -32,8 +32,8 @@ const footerList = ref([
             <div class="flex-1"></div>
             <a v-for="item in footerList" target="_blank" :key="item.name" :href="item.link"
                 class=" text-stone-600 dark:text-stone-400 dark:hover:bg-#27272a flex items-center justify-center gap-x-1 p-2 rounded-md hover:bg-#f3f4f7 transition-colors duration-200">
-                <span class="text-sm">{{ item.name }}</span>
                 <div :class="item.icon + ' text-xl'"></div>
+                <span class="text-sm">{{ item.name }}</span>
             </a>
         </div>
     </footer>
