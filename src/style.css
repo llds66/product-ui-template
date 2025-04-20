@@ -1,4 +1,30 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 0;
+  background-color: #fbfbfc00;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fbfbfc00;
+  border-radius: 1rem;
+  transition: background-color 0.2s;
+}
+
+.dark ::-webkit-scrollbar-track {
+  transition: background-color 0.2s;
+  background-color: #08090a;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #dedede;
+  border-radius: 1rem;
+  box-shadow: 0 0 4px #86868633;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background-color: #555;
 }
