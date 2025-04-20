@@ -1,38 +1,6 @@
 <script setup lang="ts">
 import { motion } from "motion-v"
 
-const animations = [
-  {
-    label: 'Fade In',
-    initial: { opacity: 0 },
-    whileInView: { opacity: 1 },
-    transition: { duration: 0.5, ease: [0.42, 0, 0.58, 1] }
-  },
-  {
-    label: 'Slide In Top',
-    initial: { opacity: 0, y: -50 },
-    whileInView: { opacity: 1, y: 0 },
-    transition: { duration: 0.5, ease: [0.42, 0, 0.58, 1] }
-  },
-  {
-    label: 'Slide In Bottom',
-    initial: { opacity: 0, y: 50 },
-    whileInView: { opacity: 1, y: 0 },
-    transition: { duration: 0.5, ease: [0.42, 0, 0.58, 1] }
-  },
-  {
-    label: 'Slide In Left',
-    initial: { opacity: 0, x: -50 },
-    whileInView: { opacity: 1, x: 0 },
-    transition: { duration: 0.5, ease: [0.42, 0, 0.58, 1] }
-  },
-  {
-    label: 'Slide In Right',
-    initial: { opacity: 0, x: 50 },
-    whileInView: { opacity: 1, x: 0 },
-    transition: { duration: 0.5, ease: [0.42, 0, 0.58, 1] }
-  }
-]
 </script>
 
 <template>
