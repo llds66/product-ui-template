@@ -2,6 +2,7 @@
 import Header from './components/Header/index.vue'
 import MainContent from './components/MainContent/index.vue'
 import Footer from './components/Footer/index.vue'
+import BackToTop from './components/BackToTop/index.vue'
 import { AnimatePresence, motion } from 'motion-v'
 import { useRoute } from 'vue-router'
 const route = useRoute()
@@ -18,4 +19,5 @@ const route = useRoute()
         </AnimatePresence>
     </MainContent>
     <Footer />
+    <BackToTop />
 </template>
