@@ -74,17 +74,17 @@ const featuresList = ref([
             <iframe src="https://vite.dev/" frameborder="0" height="850" width="100%" scrolling="no"></iframe>
         </div>
         <!-- #4 -->
-        <motion.div :initial="{ opacity: 0, y: 100 }" :while-in-view="{ opacity: 1, y: 0 }"
-            :transition="{ duration: 0.5, ease: [0.42, 0, 0.58, 1] }"
-            class="mt-10 w-full grid gap-6 cols-1 sm:cols-2 lg:cols-3">
-            <div v-for="i in featuresList" :key="i.title"
+        <div class="mt-10 w-full grid gap-6 cols-1 sm:cols-2 lg:cols-3">
+            <motion.div v-for="(i, index) in featuresList" :key="i.title" :initial="{ opacity: 0, y: 100 }"
+                :while-in-view="{ opacity: 1, y: 0 }"
+                :transition="{ duration: 0.5, delay: index * 0.1, ease: [0.42, 0, 0.58, 1] }"
                 class="flex items-center gap-x-5 h-30 bg-[rgba(183,183,255,0.05)] border-1 border-solid border-#E5E7EBFF dark:border-#3F3F46 rounded-lg transition-shadow p-5">
                 <div :class="i.icon + ' text-4xl shrink-0'"></div>
                 <div class="flex flex-col">
                     <div class="text-lg font-bold text-stone-950 dark:text-white">{{ i.title }}</div>
                     <div class="text-sm text-stone-500 dark:text-stone-400">{{ i.description }}</div>
                 </div>
-            </div>
-        </motion.div>
+            </motion.div>
+        </div>
     </div>
 </template>
