@@ -62,11 +62,24 @@ const featuresList = ref([
             }">Modern Vue 3 template styled with UnoCSS and animated with Motion. Lightweight. Flexible.</motion.div>
         </div>
         <!-- #2:按钮 -->
-        <div class="flex justify-center mt-10">
+        <div class="flex justify-center mt-10 gap-x-4">
             <motion.button @click="router.push('/effect')" :while-hover="{ scale: 1.1 }" :while-press="{ scale: 0.95 }"
                 :transition="{ type: 'spring', stiffness: 300 }"
-                class="w-90px h-35px bg-stone-950 dark:bg-stone-50 rounded-md flex items-center justify-center">
+                class="w-110px h-35px bg-stone-950 dark:bg-stone-50 rounded-md flex items-center justify-center border-1 border-stone-300 dark:border-stone-700">
                 <div class="text-white dark:text-stone-950 text-sm">Get Started</div>
+            </motion.button>
+
+            <motion.button :while-hover="{ scale: 1.1 }" :while-press="{ scale: 0.95 }"
+                :transition="{ type: 'spring', stiffness: 300 }"
+                class="w-110px h-35px  rounded-md flex items-center justify-center gap-x-1 border-1 border-stone-300 dark:border-stone-700">
+                <div class="i-mingcute-play-line"></div>
+                <div class="text-stone-950 dark:text-stone-100 text-sm">Video</div>
+            </motion.button>
+            <motion.button :while-hover="{ scale: 1.1 }" :while-press="{ scale: 0.95 }"
+                :transition="{ type: 'spring', stiffness: 300 }"
+                class="w-110px h-35px  rounded-md flex items-center justify-center gap-x-1 border-1 border-stone-300 dark:border-stone-700">
+                <div class="i-mingcute-arrow-down-line"></div>
+                <div class="text-stone-950 dark:text-stone-100 text-sm">Download</div>
             </motion.button>
         </div>
         <!-- #3:iframe -->
