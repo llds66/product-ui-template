@@ -3,7 +3,7 @@ import "./style.css";
 import "virtual:uno.css";
 import App from "./App.vue";
 import router from "./router";
-import pinia from "./pinia";
+import pinia from "@pinia/index";
 import PrimeVue from "primevue/config";
 import Aura from "@primeuix/themes/aura";
 import 'lenis/dist/lenis.css';

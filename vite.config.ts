@@ -23,7 +23,7 @@ export default defineConfig({
     analyzer({
       analyzerMode: "static",
       fileName: "analyzer",
-      openAnalyzer: process.env.ANALYZE === 'true',
+      openAnalyzer: process.env.ANALYZE === "true",
     }),
   ],
   resolve: {
@@ -35,6 +35,7 @@ export default defineConfig({
       "@apis": resolve(__dirname, "src/common/apis"),
       "@http": resolve(__dirname, "src/common/http"),
       "@utils": resolve(__dirname, "src/common/utils"),
+      "@pinia": resolve(__dirname, "src/pinia"),
     },
   },
 });

@@ -11,7 +11,8 @@
        "@assets/*": ["src/common/assets/*"],
        "@apis/*": ["src/common/apis/*"],
        "@http/*": ["src/common/http/*"],
-       "@utils/*": ["src/common/utils/*"]
+       "@utils/*": ["src/common/utils/*"],
+       "@pinia/*": ["src/pinia/*"]
      },
 
     /* Linting */
