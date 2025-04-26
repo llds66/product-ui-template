@@ -6,8 +6,8 @@ import SectionTitle from "@/common/components/SectionTitle.vue";
 <template>
   <div>
     <!-- #1 -->
-    <SectionTitle main-title="Modern UI Kits for Your Next Product"
-      sub-title="Kickstart your design with clean, responsive, and ready-to-use templates." />
+    <SectionTitle main-title="Empower Products"
+      sub-title="Use design to reveal true value and create lasting impressions" />
     <div class="flex flex-col sm:flex-row gap-2 mt-5 px-0 xl:px-50">
       <motion.div :initial="{ opacity: 0, x: -50 }" :while-in-view="{ opacity: 1, x: 0 }"
         :transition="{ duration: 0.5, ease: [0.42, 0, 0.58, 1] }"
@@ -52,8 +52,8 @@ import SectionTitle from "@/common/components/SectionTitle.vue";
       </motion.div>
     </div>
     <!-- #2 -->
-    <SectionTitle class="mt-20" main-title="Design Faster. Launch Smarter."
-      sub-title="A powerful UI template crafted for modern product teams." />
+    <SectionTitle class="mt-20" main-title="Design Drives Growth"
+      sub-title="Simplify complexity and turn ideas into real momentum" />
     <div class="w-full flex gap-2 mt-5 px-0 xl:px-50">
       <motion.div :initial="{ opacity: 0, y: 100 }" :while-in-view="{ opacity: 1, y: 0 }"
         :transition="{ duration: 0.7, ease: [0.42, 0, 0.58, 1] }" class="h-120 w-full  rounded-lg  ">
@@ -61,8 +61,8 @@ import SectionTitle from "@/common/components/SectionTitle.vue";
       </motion.div>
     </div>
     <!-- #3 -->
-    <SectionTitle class="mt-20" main-title="Pixel-Perfect UI, Built to Scale"
-      sub-title="Create sleek interfaces with reusable, customizable components." />
+    <SectionTitle class="mt-20" main-title="Craft New Experiences"
+      sub-title="Transform creativity into experiences that connect and inspire" />
     <div class="w-full flex gap-2 mt-5 px-0 xl:px-50">
       <motion.div :initial="{ opacity: 0, x: 100 }" :while-in-view="{ opacity: 1, x: 0 }"
         :transition="{ duration: 0.7, ease: [0.42, 0, 0.58, 1] }" class=" w-full">
@@ -76,8 +76,8 @@ import SectionTitle from "@/common/components/SectionTitle.vue";
       </motion.div>
     </div>
     <!-- #4 -->
-    <SectionTitle class="mt-20" main-title="Pixel-Perfect UI, Built to Scale"
-      sub-title="Create sleek interfaces with reusable, customizable components." />
+    <SectionTitle class="mt-20" main-title="Beyond Perfection"
+      sub-title="Bring products and users closer through thoughtful design" />
     <div class="w-full flex gap-2 mt-5 px-0 xl:px-50">
       <motion.div :initial="{ opacity: 0, x: 100 }" :while-in-view="{ opacity: 1, x: 0 }"
         :transition="{ duration: 0.7, ease: [0.42, 0, 0.58, 1] }" class=" w-full   ">

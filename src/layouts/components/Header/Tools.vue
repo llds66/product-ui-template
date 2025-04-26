@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import { useThemeStore } from "@pinia/index";
 const toolList = ref([
-    { url: '/', icon: 'i-mingcute-notification-line' },
+    { url: 'https://x.com', icon: 'i-mingcute-social-x-line' },
     { url: 'https://tiktok.com', icon: 'i-mingcute-tiktok-line' },
     { url: 'https://youtube.com', icon: 'i-mingcute-youtube-line' },
     { url: 'https://github.com/llds66/product-ui-template', icon: 'i-mingcute-github-line' },
