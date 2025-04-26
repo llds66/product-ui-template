@@ -1,61 +1,88 @@
 <script setup lang="ts">
 import { motion } from "motion-v"
-
+import SectionTitle from "@/common/components/SectionTitle.vue";
 </script>
 
 <template>
-  <!-- <div class="flex flex-col items-center">
-    <div v-for="(a, index) in animations" :key="index"
-      class="h-88vh w-full border-2 rounded-lg border-dashed border-stone-500 dark:border-stone-200 mt-5 flex flex-col items-center justify-center gap-y-2">
-      <motion.div
-        :initial="a.initial"
-        :while-in-view="a.whileInView"
-        :transition="a.transition"
-        class="h-100px w-100px bg-stone-800 dark:bg-stone-100 rounded-lg"
-      />
-    </div>
-  </div> -->
   <div>
     <!-- #1 -->
-    <div class="text-xl font-bold text-center mt-8">#1</div>
+    <SectionTitle main-title="Modern UI Kits for Your Next Product"
+      sub-title="Kickstart your design with clean, responsive, and ready-to-use templates." />
     <div class="flex flex-col sm:flex-row gap-2 mt-5 px-0 xl:px-50">
       <motion.div :initial="{ opacity: 0, x: -50 }" :while-in-view="{ opacity: 1, x: 0 }"
         :transition="{ duration: 0.5, ease: [0.42, 0, 0.58, 1] }"
-        class="h-60 sm:flex-1 lg:flex-[2] border-2 rounded-lg border-dashed border-stone-500" />
+        class="h-60 sm:flex-1 lg:flex-[2]  bg-#fafafa90 backdrop-blur-md rounded-lg border-1 border-stone-100 p-5">
+        <img src="@/common/assets/1.webp" class="object-contain  w-full rounded-lg h-[120px]">
+        <div class="text-lg text-stone-900 dark:text-stone-950">Privacy-first</div>
+        <div class="text-sm text-stone-500 dark:text-stone-800">Own your content with Cap's privacy-focused approach. Keep your sensitive
+          information secure and maintain
+          complete control over who can access your recordings
+        </div>
+      </motion.div>
 
       <motion.div :initial="{ opacity: 0, x: 50 }" :while-in-view="{ opacity: 1, x: 0 }"
         :transition="{ duration: 0.5, ease: [0.42, 0, 0.58, 1] }"
-        class="h-60 sm:flex-1 lg:flex-[1] border-2 rounded-lg border-dashed border-stone-500" />
+        class="h-60 sm:flex-1 lg:flex-[1] bg-#fafafa90 backdrop-blur-md rounded-lg border-1 border-stone-100 p-5">
+        <img src="@/common/assets/2.webp" class="object-contain  w-full rounded-lg h-[120px]">
+        <div class="text-lg text-stone-900 dark:text-stone-950">Multi-Platform Support</div>
+        <div class="text-sm text-stone-500 dark:text-stone-800">Cap works seamlessly across macOS and Windows, giving you the flexibility to
+          create content on any device.
+        </div>
+      </motion.div>
     </div>
     <div class="flex flex-col sm:flex-row gap-2 mt-2 px-0 xl:px-50">
       <motion.div :initial="{ opacity: 0, x: -50 }" :while-in-view="{ opacity: 1, x: 0 }"
         :transition="{ duration: 0.5, ease: [0.42, 0, 0.58, 1] }"
-        class="h-60 sm:flex-1 lg:flex-[1] border-2 rounded-lg border-dashed border-stone-500" />
+        class="h-60 sm:flex-1 lg:flex-[1] bg-#fafafa90 backdrop-blur-md rounded-lg border-1 border-stone-100 p-5">
+        <img src="@/common/assets/3.webp" class="object-contain  w-full rounded-lg h-[120px]">
+        <div class="text-lg text-stone-900 dark:text-stone-950">Multi-Platform Support</div>
+        <div class="text-sm text-stone-500 dark:text-stone-800">Cap works seamlessly across macOS and Windows, giving you the flexibility to
+          create content on any device.
+        </div>
+      </motion.div>
 
       <motion.div :initial="{ opacity: 0, x: 50 }" :while-in-view="{ opacity: 1, x: 0 }"
-        :transition="{ duration: 0.5, ease: [0.42, 0, 0.58, 1] }"
-        class="h-60 sm:flex-1 lg:flex-[2] border-2 rounded-lg border-dashed border-stone-500" />
+        :transition="{ duration: 0.7, ease: [0.42, 0, 0.58, 1] }"
+        class="h-60 sm:flex-1 lg:flex-[2] bg-#fafafa90 backdrop-blur-md rounded-lg border-1 border-stone-100 p-5">
+        <img src="@/common/assets/4.webp" class="object-contain  w-full rounded-lg h-[120px]">
+        <div class="text-lg text-stone-900 dark:text-stone-950">Multi-Platform Support</div>
+        <div class="text-sm text-stone-500 dark:text-stone-800">Cap works seamlessly across macOS and Windows, giving you the flexibility to
+          create content on any device.
+        </div>
+      </motion.div>
     </div>
     <!-- #2 -->
-    <div class="text-xl font-bold text-center mt-8">#2</div>
+    <SectionTitle class="mt-20" main-title="Design Faster. Launch Smarter."
+      sub-title="A powerful UI template crafted for modern product teams." />
     <div class="w-full flex gap-2 mt-5 px-0 xl:px-50">
-      <motion.div :initial="{ opacity: 0, x: -50 }" :while-in-view="{ opacity: 1, x: 0 }"
-        :transition="{ duration: 0.5, ease: [0.42, 0, 0.58, 1] }"
-        class="h-120 w-full  border-2 rounded-lg border-dashed border-stone-500" />
+      <motion.div :initial="{ opacity: 0, y: 100 }" :while-in-view="{ opacity: 1, y: 0 }"
+        :transition="{ duration: 0.7, ease: [0.42, 0, 0.58, 1] }" class="h-120 w-full  rounded-lg  ">
+        <img src="@/common/assets/collaboration.webp" class="object-contain  w-full rounded-lg h-120">
+      </motion.div>
     </div>
     <!-- #3 -->
-    <div class="text-xl font-bold text-center mt-8">#3</div>
+    <SectionTitle class="mt-20" main-title="Pixel-Perfect UI, Built to Scale"
+      sub-title="Create sleek interfaces with reusable, customizable components." />
     <div class="w-full flex gap-2 mt-5 px-0 xl:px-50">
-      <motion.div :initial="{ opacity: 0, x: 50 }" :while-in-view="{ opacity: 1, x: 0 }"
-        :transition="{ duration: 0.5, ease: [0.42, 0, 0.58, 1] }"
-        class="h-120 w-full  border-2 rounded-lg border-dashed border-stone-500" />
+      <motion.div :initial="{ opacity: 0, x: 100 }" :while-in-view="{ opacity: 1, x: 0 }"
+        :transition="{ duration: 0.7, ease: [0.42, 0, 0.58, 1] }" class=" w-full">
+        <img src="@/common/assets/6.jpg" class="object-contain  w-full h-auto  rounded-xl ">
+      </motion.div>
+    </div>
+    <div class="w-full flex gap-2 mt-5 px-0 xl:px-50">
+      <motion.div :initial="{ opacity: 0, x: 100 }" :while-in-view="{ opacity: 1, x: 0 }"
+        :transition="{ duration: 0.7, ease: [0.42, 0, 0.58, 1] }" class=" w-full">
+        <img src="@/common/assets/7.jpg" class="object-contain  w-full h-auto  rounded-xl ">
+      </motion.div>
     </div>
     <!-- #4 -->
-    <div class="text-xl font-bold text-center mt-8">#4</div>
+    <SectionTitle class="mt-20" main-title="Pixel-Perfect UI, Built to Scale"
+      sub-title="Create sleek interfaces with reusable, customizable components." />
     <div class="w-full flex gap-2 mt-5 px-0 xl:px-50">
-      <motion.div :initial="{ opacity: 0, y: 50 }" :while-in-view="{ opacity: 1, y: 0 }"
-        :transition="{ duration: 0.5, ease: [0.42, 0, 0.58, 1] }"
-        class="h-120 w-full  border-2 rounded-lg border-dashed border-stone-500" />
+      <motion.div :initial="{ opacity: 0, x: 100 }" :while-in-view="{ opacity: 1, x: 0 }"
+        :transition="{ duration: 0.7, ease: [0.42, 0, 0.58, 1] }" class=" w-full   ">
+        <img src="@/common/assets/5.webp" class="object-contain  w-full h-auto  rounded-xl ">
+      </motion.div>
     </div>
   </div>
 </template>

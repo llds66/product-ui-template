@@ -7,7 +7,7 @@
   "author": "llds <lldsshun@163.com> (https://github.com/llds66)",
   "repository": "https://github.com/llds66/product-ui-template",
   "scripts": {
-    "dev": "vite --host",
+    "dev": "vite",
     "build": "vue-tsc -b && vite build",
     "build:analyze": "vue-tsc -b && ANALYZE=true vite build",
     "preview": "vite preview"
