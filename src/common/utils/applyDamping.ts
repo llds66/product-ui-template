@@ -1,6 +1,6 @@
-import Lenis from "lenis";
+import Lenis from 'lenis'
 
 const lenis = new Lenis({
   autoRaf: true,
-});
-lenis.on("scroll", (_e) => {});
+})
+lenis.on('scroll', (_e) => {})

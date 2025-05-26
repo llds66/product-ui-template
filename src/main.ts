@@ -1,15 +1,15 @@
-import { createApp } from "vue";
-import "./style.css";
-import "virtual:uno.css";
-import App from "./App.vue";
-import router from "./router";
-import pinia from "@pinia/index";
-import PrimeVue from "primevue/config";
-import Aura from "@primeuix/themes/aura";
-import 'lenis/dist/lenis.css';
+import pinia from '@pinia/index'
+import Aura from '@primeuix/themes/aura'
+import PrimeVue from 'primevue/config'
+import { createApp } from 'vue'
+import App from './App.vue'
+import router from './router'
+import './style.css'
+import 'virtual:uno.css'
+import 'lenis/dist/lenis.css'
 import '@utils/applyDamping'
 
-const app = createApp(App);
+const app = createApp(App)
 app
   .use(router)
   .use(pinia)
@@ -18,7 +18,7 @@ app
       preset: Aura,
       options: {
         darkModeSelector: '.dark',
-    }
+      },
     },
   })
-  .mount("#app");
+  .mount('#app')

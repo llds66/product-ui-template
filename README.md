@@ -6,5 +6,4 @@
 
 ![product-ui-template](https://cdn.jsdelivr.net/gh/llds66/imageBed@main/githubImage/20250422/812shots_so.jpg)
 
-
 > 参考样式：[shadcn-docs-nuxt](https://github.com/ZTL-UwU/shadcn-docs-nuxt)
