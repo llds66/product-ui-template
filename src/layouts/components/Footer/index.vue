@@ -3,20 +3,26 @@ import { ref } from 'vue'
 
 const footerList = ref([
   {
-    name: 'X',
-    icon: 'i-mingcute-social-x-line',
-    link: 'https://x.com',
-  },
-  {
-    name: 'Tiktok',
-    icon: 'i-mingcute-tiktok-line',
-    link: 'https://tiktok.com',
+    name: 'Bilibili',
+    icon: 'i-mingcute-bilibili-line',
+    link: 'https://bilibili.com',
   },
   {
     name: 'Youtube',
     icon: 'i-mingcute-youtube-line',
     link: 'https://youtube.com',
   },
+  {
+    name: 'X',
+    icon: 'i-mingcute-social-x-line',
+    link: 'https://x.com',
+  },
+  {
+    name: 'Bluesky',
+    icon: 'i-mingcute-bluesky-social-line',
+    link: 'https://bluesky.app',
+  },
+
   {
     name: 'Github',
     icon: 'i-mingcute-github-line',
